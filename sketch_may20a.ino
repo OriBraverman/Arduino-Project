@@ -11,6 +11,7 @@ const int buttonPin=4;
 const int rightLed=5;
 const int upLed=6;
 const int leftLed=7;
+
 void setup() {
   //RF
   pinMode(rightLed,OUTPUT);
@@ -56,8 +57,7 @@ void loop()
           digitalWrite(leftLed,LOW);
           break;
          
-        case JUMP:
-          
+        case JUMP: 
           Serial.println("JUMP");
           Keyboard.press(KEY_UP_ARROW);
           digitalWrite(upLed,HIGH);
